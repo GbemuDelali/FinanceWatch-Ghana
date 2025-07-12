@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Finance Watch Ghana</title>
+
+  <!-- TailwindCSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Sidebar -->
+  <aside class="fixed top-0 left-0 w-64 h-screen bg-gray-900 text-yellow-400 shadow-lg z-10">
+    <div class="p-6 text-xl font-bold border-b border-gray-700">Finance Watch Admin</div>
+    <nav class="flex flex-col px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="#" class="hover:text-white">Dashboard</a>
+      <a href="#" class="hover:text-white">Manage Home</a>
+      <a href="#" class="hover:text-white">Programs</a>
+      <a href="#" class="hover:text-white">About</a>
+      <a href="#" class="hover:text-white">Contact</a>
+      <a href="#" class="hover:text-white">IAS Society</a>
+      <a href="#" class="hover:text-white">Blog</a>
+      <a href="#" class="hover:text-white">Market Floor</a>
+      <a href="#" class="hover:text-white">Innovation Hub</a>
+      <a href="#" class="hover:text-red-400 pt-4 border-t border-gray-700">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content Area -->
+  <div class="ml-64 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-yellow-500 px-6 py-4 flex justify-between items-center shadow-md">
+      <h2 class="text-xl font-bold text-black">Welcome, Admin</h2>
+      <span class="text-black font-medium hidden md:inline">admin@financewatchgh.org</span>
+    </header>
+
+    <!-- Dashboard Cards -->
+    <main class="p-6 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 flex-1">
+
+      <!-- Card Items -->
+      <div class="bg-gray-800 border-l-4 border-yellow-400 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-yellow-400 mb-2">Manage Home</h3>
+        <p class="text-gray-300 text-sm">Edit hero banner, mission, and CTA text.</p>
+        <button class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">Edit</button>
+      </div>
+
+      <div class="bg-gray-800 border-l-4 border-yellow-400 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-yellow-400 mb-2">Programs</h3>
+        <p class="text-gray-300 text-sm">Add or modify finance literacy and advocacy programs.</p>
+        <button class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">Manage</button>
+      </div>
+
+      <div class="bg-gray-800 border-l-4 border-yellow-400 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-yellow-400 mb-2">About Us</h3>
+        <p class="text-gray-300 text-sm">Update mission, vision, and team profiles.</p>
+        <button class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">Update</button>
+      </div>
+
+      <div class="bg-gray-800 border-l-4 border-yellow-400 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-yellow-400 mb-2">Contact Page</h3>
+        <p class="text-gray-300 text-sm">View messages or configure contact form settings.</p>
+        <button class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">View</button>
+      </div>
+
+      <div class="bg-gray-800 border-l-4 border-yellow-400 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-yellow-400 mb-2">IAS Society</h3>
+        <p class="text-gray-300 text-sm">Manage investment analyst bootcamp and enrollments.</p>
+        <button class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">Manage</button>
+      </div>
+
+      <div class="bg-gray-800 border-l-4 border-yellow-400 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-yellow-400 mb-2">News & Blog</h3>
+        <p class="text-gray-300 text-sm">Publish articles, interviews, and commentary.</p>
+        <button class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">Post</button>
+      </div>
+
+      <div class="bg-gray-800 border-l-4 border-yellow-400 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-yellow-400 mb-2">Market Floor</h3>
+        <p class="text-gray-300 text-sm">Update stock rankings, analytics, and insights.</p>
+        <button class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">Control</button>
+      </div>
+
+      <div class="bg-gray-800 border-l-4 border-yellow-400 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-yellow-400 mb-2">Innovation Hub</h3>
+        <p class="text-gray-300 text-sm">Launch fintech pilots and community solutions.</p>
+        <button class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded transition">Launch</button>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-yellow-500 text-black text-center py-4 font-semibold shadow-inner">
+      &copy; 2025 Finance Watch Ghana Admin Panel
+    </footer>
+
+  </div>
+
+</body>
+</html>

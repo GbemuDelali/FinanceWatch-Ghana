@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finance Watch Ghana - Programs</title>
+  <style>
+    :root {
+      --primary-yellow: #fdd835;
+      --primary-black: #212121;
+      --text-white: #f9f9f9;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--primary-black);
+      color: var(--text-white);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-yellow);
+      color: var(--primary-black);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .programs-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: #333;
+      border-left: 6px solid var(--primary-yellow);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(255, 235, 59, 0.25);
+    }
+
+    .card h2 {
+      color: var(--primary-yellow);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #ddd;
+      margin-bottom: 0.5rem;
+    }
+
+    .card button {
+      background-color: var(--primary-yellow);
+      color: var(--primary-black);
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.2s ease-in-out;
+    }
+
+    .card button:hover {
+      background-color: #ffe082;
+    }
+
+    footer {
+      background: var(--primary-yellow);
+      color: var(--primary-black);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Finance Watch Ghana - Strategic Programs</h1>
+    <p>Empowering Ghana’s Financial Future Through Innovation, Integrity and Inclusion</p>
+  </header>
+
+  <main class="programs-container" id="programs"></main>
+
+  <footer>
+    &copy; 2025 Finance Watch Ghana. All rights reserved.
+  </footer>
+
+  <script>
+    const programs = [
+      {
+        title: "Financial Inclusion & Literacy",
+        description: "Expanding equitable access to financial education and services for underserved populations."
+      },
+      {
+        title: "Market Transparency & Accountability",
+        description: "Promoting fair, responsible, and ethical practices in Ghana's financial markets."
+      },
+      {
+        title: "Sustainable Finance & Climate Risk",
+        description: "Integrating ESG and climate risk resilience into financial policymaking and investment."
+      },
+      {
+        title: "Youth & Women Empowerment",
+        description: "Facilitating access to capital and entrepreneurship tools for women and youth-led enterprises."
+      },
+      {
+        title: "Public Finance & Budget Advocacy",
+        description: "Ensuring transparent, participatory, and just fiscal governance at all levels."
+      },
+      {
+        title: "Digital Finance & Fintech Oversight",
+        description: "Enhancing ethical innovation, consumer protection, and access in digital financial ecosystems."
+      },
+      {
+        title: "Research, Policy & Advocacy",
+        description: "Driving change through data-driven research and inclusive policy engagement."
+      }
+    ];
+
+    const container = document.getElementById("programs");
+
+    programs.forEach((program) => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      card.innerHTML = `
+        <h2>${program.title}</h2>
+        <p>${program.description}</p>
+        <button onclick="alert('More details coming soon!')">Learn More</button>
+      `;
+
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Contact | Finance Watch Ghana</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans" x-data="{ open: false }">
+
+  <!-- Mobile Header -->
+  <div class="md:hidden flex items-center justify-between bg-yellow-500 px-4 py-3">
+    <h1 class="text-xl font-bold text-black">Finance Watch Ghana</h1>
+    <button @click="open = !open" class="text-black focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div x-show="open" class="md:hidden bg-gray-900 text-yellow-400 px-4 py-3 space-y-2">
+    <a href="/dashboard" class="block hover:text-white">Dashboard</a>
+    <a href="/analytics" class="block hover:text-white">Analytics</a>
+    <a href="/messages" class="block hover:text-white">Messages</a>
+    <a href="/settings" class="block hover:text-white">Settings</a>
+    <a href="/contact" class="block text-white font-bold">Contact</a>
+  </div>
+
+  <div class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="hidden md:flex md:flex-col w-64 bg-gray-900 text-yellow-400 py-6 px-4">
+      <h2 class="text-2xl font-bold mb-6">Finance Watch Ghana</h2>
+      <nav class="flex flex-col space-y-4 text-sm">
+        <a href="/dashboard" class="hover:text-white transition">Dashboard</a>
+        <a href="/analytics" class="hover:text-white transition">Analytics</a>
+        <a href="/messages" class="hover:text-white transition">Messages</a>
+        <a href="/settings" class="hover:text-white transition">Settings</a>
+        <a href="/contact" class="text-white font-semibold">Contact</a>
+      </nav>
+      <div class="mt-auto pt-6 border-t border-yellow-500 text-xs">
+        <p>Logged in as<br><strong>admin@financewatchgh.org</strong></p>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+      
+      <!-- Top Navbar (Desktop) -->
+      <header class="hidden md:flex bg-yellow-500 text-black px-6 py-4 shadow-md justify-between items-center">
+        <h1 class="text-xl font-semibold">Contact Page</h1>
+        <button class="bg-black text-yellow-400 px-4 py-2 rounded hover:bg-gray-800 transition">Log Out</button>
+      </header>
+
+      <!-- Page Content -->
+      <main class="p-6 sm:p-8 space-y-12 overflow-y-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+          <!-- Contact Form -->
+          <section>
+            <h2 class="text-2xl font-bold mb-4 text-yellow-400">Send a Message</h2>
+            <form action="#" method="POST" class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm text-yellow-300 font-medium">Name</label>
+                <input type="text" id="name" name="name" required
+                       class="mt-1 w-full p-2 bg-gray-800 border border-yellow-500 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm text-yellow-300 font-medium">Email</label>
+                <input type="email" id="email" name="email" required
+                       class="mt-1 w-full p-2 bg-gray-800 border border-yellow-500 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" />
+              </div>
+              <div>
+                <label for="message" class="block text-sm text-yellow-300 font-medium">Message</label>
+                <textarea id="message" name="message" rows="5" required
+                          class="mt-1 w-full p-2 bg-gray-800 border border-yellow-500 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+              </div>
+              <button type="submit" class="bg-yellow-500 text-black px-6 py-2 rounded-md hover:bg-yellow-600 transition">Submit</button>
+            </form>
+          </section>
+
+          <!-- Contact Info -->
+          <section>
+            <h2 class="text-2xl font-bold mb-4 text-yellow-400">Contact Information</h2>
+            <ul class="space-y-3 text-gray-300 text-sm">
+              <li><strong>Office:</strong> Accra Central, Ghana</li>
+              <li><strong>Email:</strong> info@financewatchgh.org</li>
+              <li><strong>Phone:</strong> +233 24 000 0000</li>
+              <li><strong>Hours:</strong> Mon - Fri, 9AM - 5PM</li>
+            </ul>
+            <div class="mt-6">
+              <iframe
+                src="https://maps.google.com/maps?q=accra%20central&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                class="w-full h-64 rounded-md border border-yellow-500"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

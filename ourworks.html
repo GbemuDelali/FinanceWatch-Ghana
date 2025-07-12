@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" x-data>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Work | Finance Watch Ghana</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Hero Section -->
+  <section class="bg-yellow-500 text-black py-20 text-center">
+    <h1 class="text-4xl font-bold mb-2">Our Work</h1>
+    <p class="text-lg max-w-xl mx-auto">Transforming Ghana’s financial future through advocacy, inclusion, innovation, and education.</p>
+  </section>
+
+  <!-- Impact Counters -->
+  <section class="py-16 px-6 bg-gray-900 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+    <div x-data="{ count: 0 }" x-init="let i = setInterval(() => { if(count < 120) count++ }, 20)">
+      <p class="text-4xl font-bold text-yellow-400" x-text="count"></p>
+      <p class="text-sm mt-1 text-gray-300">Communities Reached</p>
+    </div>
+    <div x-data="{ count: 0 }" x-init="let i = setInterval(() => { if(count < 5400) count += 25 }, 10)">
+      <p class="text-4xl font-bold text-yellow-400" x-text="count"></p>
+      <p class="text-sm mt-1 text-gray-300">Individuals Empowered</p>
+    </div>
+    <div x-data="{ count: 0 }" x-init="let i = setInterval(() => { if(count < 87) count++ }, 30)">
+      <p class="text-4xl font-bold text-yellow-400" x-text="count"></p>
+      <p class="text-sm mt-1 text-gray-300">Reports & Publications</p>
+    </div>
+    <div x-data="{ count: 0 }" x-init="let i = setInterval(() => { if(count < 16) count++ }, 80)">
+      <p class="text-4xl font-bold text-yellow-400" x-text="count"></p>
+      <p class="text-sm mt-1 text-gray-300">Regions Covered</p>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="py-20 px-6 bg-black text-center">
+    <h2 class="text-3xl font-bold text-yellow-400 mb-10">Key Achievements</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-gray-800 rounded-lg p-6 shadow border-l-4 border-yellow-500">
+        <h3 class="text-xl font-semibold mb-2">Policy Reform Impact</h3>
+        <p class="text-sm text-gray-300">Contributed to 4 major national financial regulation reviews since 2021.</p>
+      </div>
+      <div class="bg-gray-800 rounded-lg p-6 shadow border-l-4 border-yellow-500">
+        <h3 class="text-xl font-semibold mb-2">Youth Investment Bootcamp</h3>
+        <p class="text-sm text-gray-300">Over 1,000 students trained in investment ethics and markets.</p>
+      </div>
+      <div class="bg-gray-800 rounded-lg p-6 shadow border-l-4 border-yellow-500">
+        <h3 class="text-xl font-semibold mb-2">Financial Literacy Week</h3>
+        <p class="text-sm text-gray-300">National media campaign reached 1.2 million Ghanaians with saving strategies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Countdown Section -->
+  <section class="py-20 bg-gray-900 text-center" x-data="{
+    deadline: new Date('2025-09-01T12:00:00'),
+    now: new Date(),
+    get remaining() {
+      let diff = (this.deadline - new Date()) / 1000;
+      const d = Math.floor(diff / 86400);
+      const h = Math.floor((diff % 86400) / 3600);
+      const m = Math.floor((diff % 3600) / 60);
+      const s = Math.floor(diff % 60);
+      return { days: d, hours: h, minutes: m, seconds: s };
+    }
+  }" x-init="setInterval(() => now = new Date(), 1000)">
+    <h2 class="text-3xl font-bold text-yellow-400 mb-4">Next National Forum</h2>
+    <p class="mb-6 text-gray-300">Countdown to Ghana Financial Dialogue 2025</p>
+    <div class="flex justify-center gap-6 text-xl font-semibold text-yellow-300">
+      <div><span x-text="remaining.days"></span> Days</div>
+      <div><span x-text="remaining.hours"></span> Hours</div>
+      <div><span x-text="remaining.minutes"></span> Min</div>
+      <div><span x-text="remaining.seconds"></span> Sec</div>
+    </div>
+  </section>
+
+  <!-- Outreach Map / Regions -->
+  <section class="py-20 px-6 bg-black text-center">
+    <h2 class="text-3xl font-bold text-yellow-400 mb-10">Geographic Outreach</h2>
+    <div class="max-w-5xl mx-auto bg-gray-800 p-4 rounded-lg border border-yellow-400">
+      <p class="mb-4 text-gray-300">Our work spans urban and rural regions of Ghana, targeting both formal and informal economies.</p>
+      <iframe src="https://maps.google.com/maps?q=ghana&t=&z=6&ie=UTF8&iwloc=&output=embed" class="w-full h-64 rounded-md"></iframe>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="py-20 px-6 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold text-yellow-400 mb-8">Our Partners</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div class="bg-gray-800 p-4 rounded shadow"><img src="https://via.placeholder.com/100x50" alt="Partner 1" class="mx-auto"></div>
+      <div class="bg-gray-800 p-4 rounded shadow"><img src="https://via.placeholder.com/100x50" alt="Partner 2" class="mx-auto"></div>
+      <div class="bg-gray-800 p-4 rounded shadow"><img src="https://via.placeholder.com/100x50" alt="Partner 3" class="mx-auto"></div>
+      <div class="bg-gray-800 p-4 rounded shadow"><img src="https://via.placeholder.com/100x50" alt="Partner 4" class="mx-auto"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-500 text-black py-6 text-center font-semibold">
+    &copy; 2025 Finance Watch Ghana — Transparency. Inclusion. Impact.
+  </footer>
+
+</body>
+</html>

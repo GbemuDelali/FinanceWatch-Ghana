@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Blog - Finance Watch Ghana</title>
+  <style>
+    :root {
+      --primary-yellow: #fdd835;
+      --primary-black: #212121;
+      --text-white: #ffffff;
+      --text-gray: #cccccc;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--primary-black);
+      color: var(--text-white);
+    }
+
+    header {
+      background-color: var(--primary-yellow);
+      color: var(--primary-black);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .blog-section {
+      padding: 2rem;
+    }
+
+    h2.section-title {
+      color: var(--primary-yellow);
+      border-bottom: 2px solid var(--primary-yellow);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .blog-card {
+      background-color: #2a2a2a;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 0 transparent;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-card:hover {
+      box-shadow: 0 8px 16px rgba(253, 216, 53, 0.2);
+      transform: translateY(-6px);
+    }
+
+    .blog-card h3 {
+      color: var(--primary-yellow);
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
+    }
+
+    .blog-card p {
+      color: var(--text-gray);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .read-more {
+      display: inline-block;
+      background-color: var(--primary-yellow);
+      color: var(--primary-black);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .read-more:hover {
+      background-color: #ffe082;
+    }
+
+    footer {
+      background-color: var(--primary-yellow);
+      color: var(--primary-black);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Finance Watch Ghana</h1>
+    <p>News & Blog Portal</p>
+  </header>
+
+  <section class="blog-section">
+    <h2 class="section-title">Back to Basics</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3>Understanding Interest Rates</h3>
+        <p>A simple guide to how interest rates affect loans, savings, and the economy.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="blog-card">
+        <h3>What is Inflation?</h3>
+        <p>Exploring the causes, impacts, and what it means for your purchasing power.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-section">
+    <h2 class="section-title">Business Insights</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3>SMEs and Taxation in Ghana</h3>
+        <p>Analyzing how tax policies influence small and medium enterprise sustainability.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="blog-card">
+        <h3>Access to Finance for Startups</h3>
+        <p>Reviewing the current financial landscape and challenges faced by new businesses.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-section">
+    <h2 class="section-title">In Focus</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3>BoG’s Role in Financial Stability</h3>
+        <p>An in-depth look at the Bank of Ghana’s regulatory strategies and mandates.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="blog-card">
+        <h3>Gender and Finance</h3>
+        <p>How gender equity can be advanced through financial sector reform.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-section">
+    <h2 class="section-title">Market Digest</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3>Weekly Market Wrap</h3>
+        <p>A summary of financial market movements, indicators, and implications.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="blog-card">
+        <h3>Commodities & Forex Trends</h3>
+        <p>Analyzing recent developments in gold, oil, and foreign exchange rates.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Finance Watch Ghana. All rights reserved.
+  </footer>
+</body>
+</html>

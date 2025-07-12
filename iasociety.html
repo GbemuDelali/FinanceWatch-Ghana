@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IAS Bootcamp | Investment Analysts Society Ghana</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-yellow-400 text-black py-6 text-center shadow-md">
+    <h1 class="text-3xl font-bold tracking-wide">Investment Analysts Society (IAS)</h1>
+    <p class="text-sm md:text-base">A Finance Watch Ghana Bootcamp Initiative</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-gray-800 text-yellow-400 shadow-lg">
+    <div class="container mx-auto px-4 py-3 flex flex-wrap justify-center gap-4 text-sm md:text-base font-semibold">
+      <a href="#about" class="hover:text-yellow-300 transition">About</a>
+      <a href="#program" class="hover:text-yellow-300 transition">Program</a>
+      <a href="#login" class="hover:text-yellow-300 transition">Login</a>
+      <a href="#enroll" class="hover:text-yellow-300 transition">Enroll</a>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-yellow-400 mb-4 text-center">About the IAS Bootcamp</h2>
+    <p class="text-gray-300 leading-relaxed mb-4">
+      The Investment Analysts Society (IAS) Bootcamp is a flagship professional development initiative by Finance Watch Ghana aimed at training and equipping the next generation of financial analysts, policy advisors, and economic researchers.
+    </p>
+    <p class="text-gray-300 leading-relaxed">
+      The program combines technical finance, equity research, ethics, ESG, and policy advocacy in a structured learning journey. Participants benefit from expert-led workshops, research projects, mentorship, and certification—fostering a network that will influence capital market transparency and innovation in Ghana.
+    </p>
+  </section>
+
+  <!-- Program Structure -->
+  <section id="program" class="py-16 px-6 bg-gray-800">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center">Bootcamp Program Structure</h2>
+      <p class="text-gray-300 mb-4">The program includes the following modules:</p>
+      <ul class="list-disc pl-6 space-y-2 text-gray-300">
+        <li>Equity & Debt Markets</li>
+        <li>ESG & Ethical Investing</li>
+        <li>Data Analytics for Investment</li>
+        <li>Ghana Capital Market Regulations</li>
+        <li>Research & Publication Standards</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="py-16 px-6 max-w-xl mx-auto">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold text-yellow-400 mb-4 text-center">IAS Bootcamp Login</h2>
+      <form onsubmit="event.preventDefault(); alert('Login submitted. Functionality under construction.');" class="space-y-4">
+        <input type="text" placeholder="Username or Email" required
+               class="w-full px-4 py-2 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        <input type="password" placeholder="Password" required
+               class="w-full px-4 py-2 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        <button type="submit"
+                class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 rounded transition">
+          Login
+        </button>
+      </form>
+      <p class="text-center text-sm text-gray-300 mt-4">Don't have an account? 
+        <a href="#enroll" class="text-yellow-400 font-semibold hover:underline">Sign up here</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Enrollment Form -->
+  <section id="enroll" class="py-16 px-6 max-w-2xl mx-auto bg-gray-800 rounded-lg mt-8 shadow-lg">
+    <h2 class="text-2xl font-bold text-yellow-400 mb-4 text-center">IAS Bootcamp Enrollment Form</h2>
+    <form onsubmit="event.preventDefault(); alert('Enrollment submitted. Functionality under construction.');" class="space-y-4">
+      <input type="text" placeholder="Full Name" required class="w-full px-4 py-2 bg-gray-700 text-white rounded">
+      <input type="email" placeholder="Email Address" required class="w-full px-4 py-2 bg-gray-700 text-white rounded">
+      <input type="tel" placeholder="Phone Number" required class="w-full px-4 py-2 bg-gray-700 text-white rounded">
+      <input type="text" placeholder="Institution/Organization" required class="w-full px-4 py-2 bg-gray-700 text-white rounded">
+      <select required class="w-full px-4 py-2 bg-gray-700 text-white rounded">
+        <option value="">Select Academic/Professional Background</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Finance">Finance</option>
+        <option value="Economics">Economics</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea rows="4" placeholder="Why do you want to join the IAS Bootcamp?" required
+                class="w-full px-4 py-2 bg-gray-700 text-white rounded resize-y"></textarea>
+      <button type="submit"
+              class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 rounded transition">
+        Submit Enrollment
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-400 text-black text-center py-4 mt-16 font-semibold">
+    &copy; 2025 Investment Analysts Society - Finance Watch Ghana. All rights reserved.
+  </footer>
+
+</body>
+</html>
